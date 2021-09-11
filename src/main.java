@@ -2,16 +2,19 @@ import java.util.Scanner;
 
 public class main {
 
-    public static void main (String args[])
-    {
-        System.out.println("Hola mundo!");
-        saludo("Sulma");
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        int edad;
+
+        edad = scan.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
 
 
-    }
-
-    public static void saludo(String nombre) {
-        System.out.println("Hola "+ nombre + " !!!");
     }
 
 }
