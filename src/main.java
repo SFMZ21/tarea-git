@@ -4,14 +4,13 @@ public class main {
 
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
-        int edad;
+        int edad = scan.nextInt();
 
-        edad = scan.nextInt();
-
-        if (edad >= 18) {
-            System.out.println("Eres mayor de edad");
-        } else {
-            System.out.println("Eres menor de edad");
+        for (int i = 0; i <= edad; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
 
